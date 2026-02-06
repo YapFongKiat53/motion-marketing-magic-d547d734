@@ -5,23 +5,26 @@ import { BarChart2, Target, TrendingUp, Users, Instagram, Facebook, Youtube, Meg
 import Footer from "./Footer";
 import BlogSection from "@/components/BlogSection";
 import { Link } from "react-router-dom";
+import SEO from "@/components/SEO";
 
 const SocialMediaAds = () => {
   return (
-    <div className="min-h-screen bg-black text-white overflow-x-hidden">
-      <Navbar />
-      <Hero />
-      <Platforms />
-      <CampaignTypes />
-      <Process />
-      <BlogSection
-        tags={['social media marketing', 'social media ads', 'facebook ads', 'instagram marketing', 'tiktok advertising', 'paid social']}
-        title="Social Media Marketing Insights"
-        subtitle="Discover proven strategies for social media advertising and organic growth"
-      />
-      <CallToAction />
-      <Footer />
-    </div>
+    <>
+    <SEO title={""} description={""}>
+    </SEO>
+      <div className="min-h-screen bg-black text-white overflow-x-hidden">
+        <Navbar />
+        <Hero />
+        <Platforms />
+        <CampaignTypes />
+        <Process />
+        <BlogSection
+          tags={['social media marketing', 'social media ads', 'facebook ads', 'instagram marketing', 'tiktok advertising', 'paid social']}
+          title="Social Media Marketing Insights"
+          subtitle="Discover proven strategies for social media advertising and organic growth" />
+        <CallToAction />
+        <Footer />
+      </div></>
   );
 };
 

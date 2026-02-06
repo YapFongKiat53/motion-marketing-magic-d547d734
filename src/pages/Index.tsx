@@ -19,21 +19,28 @@ import Org_Traffic from "@/image/Org-Traffic.png"; // unused but keep if later u
 import Workconnect from "@/image/workconnect.png";
 import Tectone from "@/image/tectone.jpg";
 import Puregen from "@/image/puregen.png";
+import SEO from "@/components/SEO";
 
 export const Index = () => {
   return (
-    <div className="min-h-screen bg-black text-white overflow-x-hidden">
-      <Navbar />
-      <Hero />
-      <Framework />
-      <Vision />
-      <TotalDigitalSolutions />
-      <WebsiteDesign />
-      <Services />
-      {/* <Testimonials /> */}
-      <ContactForm />
-      <Footer />
-    </div>
+
+    <>
+      <SEO title="Leadzap Marketing - Supercharge Your Digital Marketing" description="Leadzap Marketing helps businesses grow through data-driven digital marketing strategies and our proprietary Push-Pull framework.">
+
+      </SEO>
+      <div className="min-h-screen bg-black text-white overflow-x-hidden">
+        <Navbar />
+        <Hero />
+        <Framework />
+        <Vision />
+        <TotalDigitalSolutions />
+        <WebsiteDesign />
+        <Services />
+        {/* <Testimonials /> */}
+        <ContactForm />
+        <Footer />
+      </div>
+    </>
   );
 };
 

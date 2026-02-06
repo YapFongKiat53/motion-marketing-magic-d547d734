@@ -5,25 +5,28 @@ import { BarChart2, Search, ArrowUpRight, Globe, TrendingUp, LineChart, CheckCir
 import Footer from "./Footer";
 import BlogSection from "@/components/BlogSection";
 import { Link } from "react-router-dom";
+import SEO from "@/components/SEO";
 
 const SEM = () => {
   return (
-    <div className="min-h-screen bg-black text-white overflow-x-hidden">
-      <Navbar />
-      <Hero />
-      <Features />
-      <GEOExplanation />
-      <Process />
-      <PPCFeatures />
-      <PPCProcess />
-      <BlogSection
-        tags={['SEM', 'SEO', 'search engine marketing', 'google ads', 'paid advertising', 'organic traffic']}
-        title="SEM & SEO Insights"
-        subtitle="Learn the latest strategies and tips for search engine marketing success"
-      />
-      <CallToAction />
-      <Footer />
-    </div>
+    <>
+    <SEO title={""} description={""}>
+
+    </SEO><div className="min-h-screen bg-black text-white overflow-x-hidden">
+        <Navbar />
+        <Hero />
+        <Features />
+        <GEOExplanation />
+        <Process />
+        <PPCFeatures />
+        <PPCProcess />
+        <BlogSection
+          tags={['SEM', 'SEO', 'search engine marketing', 'google ads', 'paid advertising', 'organic traffic']}
+          title="SEM & SEO Insights"
+          subtitle="Learn the latest strategies and tips for search engine marketing success" />
+        <CallToAction />
+        <Footer />
+      </div></>
   );
 };
 

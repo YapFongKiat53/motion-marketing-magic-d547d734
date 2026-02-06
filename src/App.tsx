@@ -32,9 +32,8 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/sem" element={<SEM />} />
             <Route path="/social-media-ads" element={<SocialMediaAds />} />
-            <Route path="/custom-software" element={<CustomerSoftware />} />
             <Route path="/customer-software-demo" element={<CustomerSoftware />} />
-            <Route path="/order-management" element={<OrderManagement />} />
+            {/* <Route path="/order-management" element={<OrderManagement />} /> */}
             <Route path="/contact" element={<Contact />} />
             <Route path="/corporate-profile" element={<CorporateProfile />} />
             <Route path="/blog" element={<Blog />} />

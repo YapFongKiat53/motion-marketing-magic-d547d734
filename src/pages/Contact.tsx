@@ -4,6 +4,7 @@ import { Navbar } from "./Index";
 import { Phone, Mail, CheckCircle, ChevronDown, X } from "lucide-react";
 import PhoneInput from "../components/PhoneInput";
 import Footer from "./Footer";
+import SEO from "@/components/SEO";
 
 const serviceLabels: Record<string, string> = {
   "": "Select a Service",
@@ -79,20 +80,23 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white overflow-x-hidden">
-      <Navbar />
-      <Hero />
-      <ContactForm
-        submitted={submitted}
-        onSubmit={handleSubmit}
-        formData={formData}
-        handleChange={handleChange}
-        handlePhoneChange={handlePhoneChange}
-        handleServiceChange={handleServiceChange}
-      />
-      <ContactInfo />
-      <Footer />
-    </div>
+
+    <>
+    <SEO title={""} description={""}>
+
+    </SEO><div className="min-h-screen bg-black text-white overflow-x-hidden">
+        <Navbar />
+        <Hero />
+        <ContactForm
+          submitted={submitted}
+          onSubmit={handleSubmit}
+          formData={formData}
+          handleChange={handleChange}
+          handlePhoneChange={handlePhoneChange}
+          handleServiceChange={handleServiceChange} />
+        <ContactInfo />
+        <Footer />
+      </div></>
   );
 };
 

@@ -9,6 +9,7 @@ import ProcessSection from '@/components/custom-software/Process';
 import FAQSection from '@/components/custom-software/FAQ';
 import CTASection from '@/components/custom-software/CTA';
 import BlogSection from '@/components/BlogSection';
+import SEO from '@/components/SEO';
 
 const CustomerSoftware = () => {
 
@@ -109,25 +110,30 @@ const CustomerSoftware = () => {
 
 
   return (
-    <OrderProvider>
-      <div className="min-h-screen bg-black text-white overflow-x-hidden">
-        <Navbar />
-        <main>
-          <CustomSoftwareHero subtitle="Custom software, automation tools, and systems engineered for efficiency and cost optimization." />
-          <ServicesSection />
-          <BenefitsSection />
-          <ProcessSection />
-          <BlogSection
-            tags={['custom software', 'software development', 'automation', 'business systems', 'erp', 'crm integration']}
-            title="Software Development Insights"
-            subtitle="Explore the latest trends and best practices in custom software development"
-          />
-          <CTASection />
-          <FAQSection />
-          <Footer />
-        </main>
-      </div>
-    </OrderProvider>
+
+    <>
+      <SEO title={''} description={''}>
+
+
+      </SEO>
+      <OrderProvider>
+        <div className="min-h-screen bg-black text-white overflow-x-hidden">
+          <Navbar />
+          <main>
+            <CustomSoftwareHero subtitle="Custom software, automation tools, and systems engineered for efficiency and cost optimization." />
+            <ServicesSection />
+            <BenefitsSection />
+            <ProcessSection />
+            <BlogSection
+              tags={['custom software', 'software development', 'automation', 'business systems', 'erp', 'crm integration']}
+              title="Software Development Insights"
+              subtitle="Explore the latest trends and best practices in custom software development" />
+            <CTASection />
+            <FAQSection />
+            <Footer />
+          </main>
+        </div>
+      </OrderProvider></>
   );
 };
 

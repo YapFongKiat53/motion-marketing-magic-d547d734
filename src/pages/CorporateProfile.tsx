@@ -9,16 +9,15 @@ import AnalyticsResults from "@/image/analytics-results.jpg";
 import MultiplatformAnimation from "@/image/multiplatform-animation.gif";
 import PushPullFramework from "@/image/Push-Pull-MarketingFrame.png";
 import DoohRoadshowDemo from "@/image/dooh-roadshow-demo.mp4";
+import SEO from '@/components/SEO';
 
 const CorporateProfile = () => {
-  // SEO setup
-  useEffect(() => {
-    document.title = 'Corporate Profile - Leadzap Marketing Sdn Bhd Malaysia';
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Leadzap Marketing Sdn Bhd corporate profile - Leading digital marketing agency and software development company in Malaysia offering SEM, social media marketing, and custom software solutions.');
-    }
-  }, []);
+
+  <SEO
+        title="Worker Quarter Provider | Worker Hostel | Work Connect (M) Sdn Bhd"
+        description="Work Connect provides quality worker quarters and accommodation facilities with standard amenities and additional services such as tracking, security, remittance, catering, and transportation."
+        keywords="worker quarters, accommodation, CLQ, centralized labour quarters, worker housing, Tasek, Gopeng, Simpang Pulai, Bidor"
+      />
 
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
